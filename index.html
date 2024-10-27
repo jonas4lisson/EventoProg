@@ -4,96 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evento de Programação</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url(/img/image.png);
-            background-size: cover; /*cobrir todo o espaço*/
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        section {
-            width: 100%; /* Cada section ocupa toda a largura da tela */
-            text-align: center; /* Centraliza o conteúdo em cada section */
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            color: rgb(215, 255, 221);
-            font-weight: bold;
-        }
-        
-        .content-paragraph {
-            font-size: 1.5em;
-            color: black;
-            text-align: left; /* Alinha o texto à esquerda */
-            padding-left: 5%; /* Adiciona o afastamento à esquerda */
-            padding-bottom: 5%;
-
-            width: 65%; /* O parágrafo ocupa metade da largura da tela */
-           
-        }
-        button {
-            padding: 16px 20px;
-            font-size: 2em;
-            cursor: pointer;
-            border: 2px solid transparent; /* Inicialmente, sem contorno */
-
-            background-color: #06491591;
-            color: white;
-            border-radius: 5px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); /* Sombra suave */
-
-
-        }
-        button:hover {
-            background-color: rgb(37, 163, 37);
-            padding: 18px 22px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8); /* Sombra suave */
-
-        }
-        button:focus {
-            outline: none; /* Remove o contorno padrão */
-            border: 2px solid #00aaff; /* Contorno colorido */
-            box-shadow: 0px 0px 2px #00aaff; /* Sombra no contorno */
-            color: #28c5ab;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <section>
-        <h1>Tema</h1>
-    </section>
+    <header>
+        <h1>Introdução a lógica de programação</h1>
+    </header>
 
     <section>
         <ul class="content-paragraph">
-            <li>O que vai ter na aula</li><br>
-            <li></li> <br>
-            <li></li> <br>
-            <li></li> <br>
-            <li></li>
+            <h2>O que vai ter na aula:</h2>
+            <li>Vamos ensinar a como desenvolver o jogo da cobrinha, além de explicar o seu funcionamento e lógica de programação.</li> <br>
+            <li>Será respaudado os principais conceitos para introduzi-los ao entendimento dos códigos.</li><br>
+            <li style="color: rgb(238, 255, 0);">Não perca a chance de conhecer esse mundo de tecnologia da informação (TI) voltada para resolver problemas  e explorar as necessidades do mercado atual.</li> <br><br>
+            <h3>começará dia 01/11 (Sexta-feira)</h3>
+            <h3>Serão 2 horas: das 10:00 às 12:00</h3>
         </ul>
     </section>
 
-    <section>
-        <button id="button">Inscrever-se</button>
+    <section id="containerArea">
+        <button id="button" class="randomMoveButton">Inscrever-se</button>
+        <div id="gameArea">
+            <div id="snake"></div>
+        </div>
     </section>
+
+    <script src="script.js"></script>
     
-
-        <script>
-            const botao = document.querySelector('button')
-
-            botao.addEventListener('click', () => {
-            // Redireciona para outra página
-            window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfla-bqS9TOCW72AU8CTDadNPQ94UKlDO7yI4ecQXzC2RqgvA/viewform?usp=sf_link'; // Coloque o link para onde deseja redirecionar
-        });
-        </script>
 </body>
 </html>
